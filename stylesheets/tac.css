@@ -5,7 +5,7 @@
 /* purpose with or without fee is hereby granted, provided that the above  */
 /* copyright notice and this permission notice appear in all copies.       */
 
-.tac { font-size: 10pt; }
+.tac { font-size: 16px; padding: 1rem; }
 
 .title     { font-weight: bold; }
 .titleItem { font-size: 8pt; font-weight: bold; }
@@ -20,16 +20,16 @@ td.perfTitle { font-size: 10pt; font-weight: bold; background-color: #d0d0d0; bo
 .healthItem  { font-size: 10pt; font-weight: bold; }
 .healthBar   { background-color: grey; padding: 2 4 2 4; }
 
-.outageTitle     { font-weight: bold; background-color: #d0d0d0; border: 1px solid #aaaaaa; }
+.outageTitle     { font-weight: bold; background-color: #1F2326; border-radius: 7px 7px 0 0;}
 .outageHeader    { font-weight: bold; border-bottom: 1px solid #aaaaaa; }
 
-.hostTitle       { font-weight: bold; background-color: #d0d0d0; border: 1px solid #aaaaaa; }
+.hostTitle       { font-weight: bold; background-color: #1F2326; border-radius: 7px 7px 0 0;}
 td.hostHeader    { font-weight: bold; border-bottom: 1px solid #aaaaaa; }
 
-.serviceTitle    { font-weight: bold; background-color: #d0d0d0; border: 1px solid #aaaaaa; }
+.serviceTitle    { font-weight: bold; background-color: #1F2326; border-radius: 7px 7px 0 0;}
 td.serviceHeader { font-weight: bold; border-bottom: 1px solid #aaaaaa; }
 
-.featureTitle    { font-weight: bold; background-color: #d0d0d0; border: 1px solid #aaaaaa; }
+.featureTitle    { font-weight: bold; background-color: #1F2326; border-radius: 7px 7px 0 0;}
 td.featureHeader { font-weight: bold; border-bottom: 1px solid #aaaaaa; }
 
 .featureEnabled  { text-align: center; background-color: #ccffcc; }

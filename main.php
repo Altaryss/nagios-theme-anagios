@@ -157,12 +157,6 @@ $this_year = '2020';
 
 
 <div id="updateversioninfo">
-<?php echo '
-<div class="updatechecksdisabled">
-<div class="warningmessage">Warning: Automatic Update Checks are Disabled!</div>
-<div class="submessage">Disabling update checks presents a possible security risk.  Visit <a href="https://www.nagios.org/" target="_blank">nagios.org</a> to check for updates manually or enable update checks in your Nagios config file.</a></div>
-</div>
-'?>
 <?php
 	$updateinfo = get_update_information();
 	if (!$updateinfo['update_checks_enabled']) {
@@ -194,55 +188,57 @@ $this_year = '2020';
 
 
 <div id="splashboxes">
-
+	<div id="splashlist">
 	<div id='splashrow1'>
 
-		<div id="splashbox1" class="splashbox splashbox-clear">
-			<h2>Get Started</h2>
-			<ul>
-				<li><a href="https://go.nagios.com/nagioscore/startmonitoring" target="_blank">Start monitoring your infrastructure</a></li>
-				<li><a href="https://go.nagios.com/nagioscore/changelook" target="_blank">Change the look and feel of Nagios</a></li>
-				<li><a href="https://go.nagios.com/nagioscore/extend" target="_blank">Extend Nagios with hundreds of addons</a></li>
-				<!--<li><a href="https://go.nagios.com/nagioscore/docs" target="_blank">Read the Nagios documentation</a></li>-->
-				<li><a href="https://go.nagios.com/nagioscore/support" target="_blank">Get support</a></li>
-				<li><a href="https://go.nagios.com/nagioscore/training" target="_blank">Get training</a></li>
-				<li><a href="https://go.nagios.com/nagioscore/certification" target="_blank">Get certified</a></li>
-			</ul>
-		</div>
+<div id="splashbox1" class="splashbox splashbox-clear">
+	<h2>Get Started</h2>
+	<ul>
+		<li><a href="https://go.nagios.com/nagioscore/startmonitoring" target="_blank">Start monitoring your infrastructure</a></li>
+		<li><a href="https://go.nagios.com/nagioscore/changelook" target="_blank">Change the look and feel of Nagios</a></li>
+		<li><a href="https://go.nagios.com/nagioscore/extend" target="_blank">Extend Nagios with hundreds of addons</a></li>
+		<li><a href="https://go.nagios.com/nagioscore/docs" target="_blank">Read the Nagios documentation</a></li>
+		<li><a href="https://go.nagios.com/nagioscore/support" target="_blank">Get support</a></li>
+		<li><a href="https://go.nagios.com/nagioscore/training" target="_blank">Get training</a></li>
+		<li><a href="https://go.nagios.com/nagioscore/certification" target="_blank">Get certified</a></li>
+	</ul>
+</div>
 
-		<div id="splashbox2" class="splashbox">
-			<h2>Quick Links</h2>
-			<ul>
-				<li><a href="https://library.nagios.com" target="_blank">Nagios Library</a> (tutorials and docs)</li>
-				<li><a href="https://labs.nagios.com" target="_blank">Nagios Labs</a> (development blog)</li>
-				<li><a href="https://exchange.nagios.org" target="_blank">Nagios Exchange</a> (plugins and addons)</li>
-				<li><a href="https://support.nagios.com" target="_blank">Nagios Support</a> (tech support)</li>
-				<li><a href="https://www.nagios.com" target="_blank">Nagios.com</a> (company)</li>
-				<li><a href="https://www.nagios.org" target="_blank">Nagios.org</a> (project)</li>
-			</ul>
-		</div>
+<div id="splashbox2" class="splashbox">
+	<h2>Quick Links</h2>
+	<ul>
+		<li><a href="https://library.nagios.com" target="_blank">Nagios Library</a> (tutorials and docs)</li>
+		<li><a href="https://labs.nagios.com" target="_blank">Nagios Labs</a> (development blog)</li>
+		<li><a href="https://exchange.nagios.org" target="_blank">Nagios Exchange</a> (plugins and addons)</li>
+		<li><a href="https://support.nagios.com" target="_blank">Nagios Support</a> (tech support)</li>
+		<li><a href="https://www.nagios.com" target="_blank">Nagios.com</a> (company)</li>
+		<li><a href="https://www.nagios.org" target="_blank">Nagios.org</a> (project)</li>
+	</ul>
+</div>
 
-		<div id="splashbox3" class="splashbox3-empty"><!-- youtube playlist -->
-		</div>
+<div class="splashbox"><!-- youtube playlist -->
+	<h2>Youtube Help</h2>
+	<div id="splashbox3"></div>
+</div>
 
-	</div><!-- end splashrow1 -->
+</div><!-- end splashrow1 -->
 
-	<div id="splashrow2">
+<div id="splashrow2">
 
-		<div id="splashbox4" class="splashbox splashbox-clear"><!-- latest news feed -->
-			<h2>Latest News</h2>
-			<div id="splashbox4-contents">
-			</div>
-		</div>
+<div id="splashbox4" class="splashbox splashbox-clear"><!-- latest news feed -->
+	<h2>Latest News</h2>
+	<div id="splashbox4-contents">
+	</div>
+</div>
 
-		<div id="splashbox5" class="splashbox"><!-- core promo feed -->
-			<h2>Don't Miss...</h2>
-			<div id="splashbox5-contents">
-			</div>
-		</div>
+<div id="splashbox5" class="splashbox"><!-- core promo feed -->
+	<h2>Don't Miss...</h2>
+	<div id="splashbox5-contents">
+	</div>
+</div>
 
-	</div><!-- end splashrow2 -->
-
+</div><!-- end splashrow2 -->
+	</div>
 </div><!-- end splashboxes-->
 
 
@@ -251,11 +247,10 @@ $this_year = '2020';
 		Copyright &copy; 2010-<?php echo $this_year; ?> Nagios Core Development Team and Community Contributors. Copyright &copy; 1999-2009 Ethan Galstad. See the THANKS file for more information on contributors.
 	</div>
 	<div CLASS="disclaimer">
-		Nagios Core is licensed under the GNU General Public License and is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE.  Nagios, Nagios Core and the Nagios logo are trademarks, servicemarks, registered trademarks or registered servicemarks owned by Nagios Enterprises, LLC.  Use of the Nagios marks is governed by the <A href="https://www.nagios.com/legal/trademarks/">trademark use restrictions</a>.
+		Nagios Core is licensed under the GNU General Public License and is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE.  Nagios, Nagios Core and the Nagios logo are trademarks, servicemarks, registered trademarks or registered servicemarks owned by Nagios Enterprises, LLC.  Use of the Nagios marks is governed by the <a href="https://www.nagios.com/legal/trademarks/">trademark use restrictions</a>.
 	</div>
 	<div class="logos">
-		<a href="https://www.nagios.org/" target="_blank"><img src="images/weblogo1.png" width="102" height="47" border="0" style="padding: 0 40px 0 40px;" title="Nagios.org" /></a>
-		<a href="http://sourceforge.net/projects/nagios" target="_blank"><img src="images/sflogo.png" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
+		<a href="https://www.nagios.org/" target="_blank"><img src="images/YdTkEzx.png" width="100" title="Nagios.org"></a>
 	</div>
 </div>
 

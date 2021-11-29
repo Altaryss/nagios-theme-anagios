@@ -313,7 +313,9 @@ div.navsectionheader ul li ul li {
   justify-content: center;
 }
 #maincopy {
-  margin: 0 0 15px 0;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 #mainlogo a img {
   width: 100%;
@@ -340,14 +342,21 @@ div.navsectionheader ul li ul li {
   color: rgba(255, 255, 255, 0.25);
   margin-bottom: 1rem;
 }
+#currentversioninfo .checkforupdates {
+  display: flex;
+}
 #currentversioninfo .checkforupdates a {
   font-size: 16px;
   font-weight: bold;
   color: #5167f4;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  background-color: #272A30;
   transition: all 0.25s ease-out;
 }
 .checkforupdates a:hover {
   color: #394dcf !important;
+  background-color: #2a2e38 !important;
 }
 #currentversioninfo .whatsnew {
   font-size: 11pt;
@@ -362,20 +371,24 @@ div.navsectionheader ul li ul li {
   clear: left;
 }
 .updatechecksdisabled {
-  background-color: #FF9F9F;
+  border-radius: 7px;
+  background-color: rgba(255, 0, 0, 0.25);
   border: 1px solid red;
-  padding: 10px;
+  padding: 1rem;
 }
 .updatechecksdisabled div.warningmessage {
-  font-weight: bold;
+  font-weight: 800;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
 }
 .updateavailable {
-  background-color: #9FD4FF;
-  border: 1px solid blue;
-  padding: 10px;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 255, 0.25);
+  border: 1px solid #5167f4;
+  padding: 1rem;
 }
 .updateavailable div.updatemessage {
-  font-size: 12pt;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -388,6 +401,15 @@ div.navsectionheader ul li ul li {
 }
 #splashpage #mainfooter .disclaimer {
   margin: auto;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+}
+.disclaimer a {
+  color: #5167f4;
+}
+.disclaimer a:hover {
+  text-decoration: underline;
 }
 #splashpage #mainfooter .logos {
   margin: 15px 0 0 0;
@@ -397,9 +419,9 @@ div.navsectionheader ul li ul li {
 
 
 table.infoBox { width: 100%; }
-td.infoBox { font-size: 8pt; padding: 0 0 1em 0; white-space: nowrap; }
-div.infoBoxTitle { font-size: 10pt; font-weight: bold; }
-div.infoBoxBadProcStatus { font-size: 8pt; font-weight: bold; color: red; }
+td.infoBox { font-size: 14px; padding: 0 0 1rem 0; white-space: nowrap; }
+div.infoBoxTitle { font-size: 18px; font-weight: bold; }
+div.infoBoxBadProcStatus { font-size: 14px; font-weight: bold; color: red; }
 
 .linkBox { font-size: 8pt; padding: 1px; }
 table.linkBox td { white-space: nowrap; }
@@ -495,17 +517,27 @@ th.data       { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-b
 
 
 #splashboxes {
+  display: flex;
+  justify-content: center;
   margin: auto;
-  width: 794px;
+  width: 100%;
+  padding: 2rem 0;
 }
-
+#splashlist {
+  display: block;
+  justify-content: flex-start;
+}
+#splashrow1, #splashrow2 {
+  display: flex;
+  flex-wrap: wrap;
+}
 .splashbox {
-  padding: 5px;
-  margin: 5px;
-  border: 1px solid #AAAAAA;
-  float: left;
+  padding: 1rem;
+  margin: 0.5rem;
   text-align: left;
-  height: 140px;
+  height: auto;
+  border-radius: 7px;
+  background-color: #1A1C1E;
 }
 .splashbox h2 {
   margin: 0;
@@ -518,7 +550,13 @@ th.data       { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-b
 .splashbox ul li {
   clear: both;
 }
-
+.splashbox ul li a {
+  color: #5167f4;
+  transition: all 0.25s ease-out;
+}
+.splashbox ul li a:hover {
+  color: #394dcf;
+}
 .splashbox-media {
   margin: 5px;
 }
@@ -538,7 +576,7 @@ th.data       { font-size: 9pt; text-align: left; padding: 0 3px 0 3px; border-b
 }
 
 #splashbox1, #splashbox2, #splashbox4 {
-  width: 250px;
+  width: auto;
 }
 #splashbox3 {
   float: left;

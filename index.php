@@ -41,7 +41,7 @@ $this_year = '2020';
 		document.cookie = "NagFormId=" + n.toString(16);
 	</script>
 	<style>
-		body{margin:0;padding:0}.container{display:flex;flex-direction:row;width:100vw;height:100vh}.col{display:flex;height:100%;overflow:auto;min-height:-webkit-fill-available;min-height:-moz-available}.col.sidebar{float:left;width:100%;max-width:275px}.col.page{width:100%;max-width:-webkit-fill-available;max-width:-moz-available}.col.page iframe{width:-webkit-fill-available;width:-moz-available}iframe{border:none;min-height:100%;height:-webkit-fill-available;height:-moz-available}
+		body{margin:0;padding:0}.container{display:flex;flex-direction:row;width:100vw;height:100vh}.col{display:flex;height:100%;min-height:-webkit-fill-available;min-height:-moz-available}.col.sidebar{float:left;width:100%;max-width:275px}.col.page{width:100%;max-width:-webkit-fill-available;max-width:-moz-available}.col.page iframe{width:-webkit-fill-available;width:-moz-available}iframe{border:none;min-height:100%;height:-webkit-fill-available;height:-moz-available}
 	</style>
 </head>
 <body>
@@ -54,22 +54,4 @@ $this_year = '2020';
 		</div>
 	</div>
 </body>
-<!--
-<frameset cols="275,*">
-	<frame src="side.php" name="side" frameborder="no" border="0" scrolling="no" noresize>
-	<frame src="<?php echo $url; ?>" name="main" frameborder="no" border="0" scrolling="no" noresize>
-
-	<noframes>
-		<h2>Nagios Core</h2>
-		<p align="center">
-			<a href="https://www.nagios.org/">www.nagios.org</a><br>
-			Copyright &copy; 2010-<?php echo $this_year; ?> Nagios Core Development Team and Community Contributors.
-			Copyright &copy; 1999-2010 Ethan Galstad<br>
-		</p>
-		<p>
-			<i>Note: These pages require a browser which supports frames</i>
-		</p>
-	</noframes>
-</frameset>
--->
 </html>
