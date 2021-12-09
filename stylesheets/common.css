@@ -79,18 +79,19 @@ input {
   background-color: #151718;
   border-radius: 7px;
   padding: 0.5rem 0.75rem;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
   width: 100%;
   font-family: "Poppins", sans-serif;
   color: #fff;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0);
   transition: all 0.25s ease-out;
 }
-input:focus, input:focus-within {
+input:focus, input:focus-within, input:focus-visible {
   border: 2px solid #5167f4;
   box-shadow: 0 0 0 2px rgba(81, 104, 244, 0.2);
+  outline: none;
 }
-
 .tra-gb {
   transition: all 0.25s ease-out;
 }
@@ -98,7 +99,24 @@ input:focus, input:focus-within {
 .navbar {
   background-color:#1A1C1E;
   padding: 1rem;
-  width: 275px;
+}
+.navbar::-webkit-scrollbar-track {
+  background-color: #18191b;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #111315;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+  background-color: #5167f4;
 }
 
 div.navbarlogo {
@@ -120,7 +138,7 @@ div.navbarlogo {
   width: 42px;
   height: 42px;
   border-radius: 7px;
-  background-color: #1F2326;
+  background-color: #212433;
   padding: 0.5rem;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
 }
@@ -153,11 +171,14 @@ ul.navsectionlinks {
   padding-bottom: 1rem;
 }
 ul.navsectionlinks li.std {
+  margin: 0.25rem 0;
+}
+ul.navsectionlinks li.std a.link {
+  width: 100%;
   transition: all 0.25s ease-out;
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 0.75rem;
-  margin: 0.25rem 0;
   border-radius: 7px;
 }
 ul.navsectionlinks li svg {
@@ -167,13 +188,25 @@ ul.navsectionlinks li a {
   font-weight: 500;
   font-size: 14px;
 }
-ul.navsectionlinks li.std a,
-ul.navsectionlinks li.std svg,
-li .linksh svg, li .linksh a,
-li.col ul li a {
+ul.navsectionlinks li.std a.link span,
+ul.navsectionlinks li.std a.link svg,
+li .linksh a.link svg, li .linksh a.link,
+li.col ul li a.sub span {
   transition: all 0.25s ease-out;
   fill: rgba(255,255,255,.5);
   color: rgba(255,255,255,.5);
+}
+.rel {
+   position: relative;
+}
+.abs {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 10px;
+   display: flex;
+   align-items: center;
+   transition: all 0.25s ease-out;
 }
 ul.navsectionlinks li.col {
   display: block;
@@ -181,14 +214,16 @@ ul.navsectionlinks li.col {
   margin: 0;
 }
 li.col .linksh {
+  margin: 0.25rem 0;
+}
+li.col .linksh a.link {
   display: flex;
   align-items: center;
   padding: 0.5rem 0.75rem;
-  margin: 0.25rem 0;
   border-radius: 7px;
   transition: all 0.25s ease-out;
 }
-li.col .linksh:hover {
+li.col .linksh a.link:hover {
   background-color: #272A30;
 }
 li.col ul {
@@ -203,17 +238,21 @@ li.col ul .line {
  top: 0;
  left: -1.4%;
  width: 2.5px;
- height: calc(100% - 2rem);
+ height: calc(100% - 1.8rem);
  background-color: #272A30;
 }
 li.col ul li {
-  position: relative;
+   position: relative;
+   margin: 0.25rem 0;
+}
+li.col ul li a.sub {
+   display: block;
+   width: 100%;
   padding: 0.35rem 0.75rem;
-  margin: 0.25rem 0;
   border-radius: 7px;
   transition: all 0.25s ease-out;
 }
-li.col ul li:hover {
+li.col ul li a.sub:hover {
   background-color: #272A30;
 }
 li.col ul li .corner {
@@ -231,31 +270,22 @@ ul.navsectionlinks li ul {
   padding: 0 0 0 30px;
   list-style: none;
 }
-ul.navsectionlinks li.std:hover {
+ul.navsectionlinks li.std a.link:hover {
   background-color: #272A30;
 }
-ul.navsectionlinks li.std:hover a,
-ul.navsectionlinks li.std:hover svg,
-li .linksh:hover a, li .linksh:hover svg,
-li.col ul li:hover a {
+ul.navsectionlinks li.std a.link:hover span,
+ul.navsectionlinks li.std a.link:hover svg,
+li .linksh:hover a, li .linksh a:hover svg,
+li.col ul li a.sub:hover span {
   fill: #fff;
   color: #fff;
 }
-ul.navsectionlinks li.std:active a,
-ul.navsectionlinks li.std:active svg,
-li.col ul li:active a,
-li .linksh:active a, li .linksh:active svg {
+ul.navsectionlinks li.std a.link:active span,
+ul.navsectionlinks li.std a.link:active svg,
+li.col ul li a.sub:active span,
+li .linksh:active a, li .linksh a.link:active svg {
   color: #5167f4;
   fill: #5167f4;
-}
-ul.navsectionlinks li ul li a {
-  background: none;
-  padding: 0;
-  font-weight: normal;
-  font-size: 13px;
-}
-ul.navsectionlinks li ul li a:hover {
-  background: none;
 }
 ul.navsectionlinks li ul li ul {
   margin: 0px;

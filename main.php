@@ -139,7 +139,7 @@ $this_year = '2020';
 <div id="mainbrandsplash">
 	<div id="mainlogo">
 		<a href="https://www.nagios.org/" target="_blank">
-			<img src="images/YdTkEzx.png" alt="Nagios" title="Nagios">
+			<img src="images/logos/anagios.png" alt="Nagios" title="Nagios">
 		</a>
 	</div>
 	<div>
@@ -250,7 +250,7 @@ $this_year = '2020';
 		Nagios Core is licensed under the GNU General Public License and is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE.  Nagios, Nagios Core and the Nagios logo are trademarks, servicemarks, registered trademarks or registered servicemarks owned by Nagios Enterprises, LLC.  Use of the Nagios marks is governed by the <a href="https://www.nagios.com/legal/trademarks/">trademark use restrictions</a>.
 	</div>
 	<div class="logos">
-		<a href="https://www.nagios.org/" target="_blank"><img src="images/YdTkEzx.png" width="100" title="Nagios.org"></a>
+		<a href="https://www.nagios.org/" target="_blank"><img src="images/logos/anagios.png" width="100" title="Nagios.org"></a>
 	</div>
 </div>
 
